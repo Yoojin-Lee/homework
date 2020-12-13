@@ -1,0 +1,17 @@
+for (let i = 0; i < bikes.length; i++) {
+  let parkingBikes = bikes[i];
+  if (parkingBikes["parkingBikeTotCnt"] <= 5) {
+    let bikesCount = parkingBikes["parkingBikeTotCnt"]
+    let station = parkingBikes["stationName"];
+    console.log("5개 이하 남은 정류장: " + station + ", " + bikesCount);
+  }
+}
+
+function showStation(num) {
+for (let i = 0; i < bikes.length; i++) {
+    if (bikes[i]["parkingBikeTotCnt"] <= num) {
+        let station = bikes[i]["stationName"];
+        console.log(station);
+    }
+ }
+}
